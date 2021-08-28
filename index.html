@@ -1,0 +1,505 @@
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Dog finder!</title>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>*/ -->
+
+  <script src="dogfinder.js"></script>
+ <style>
+   nav{
+    background-color:rgba(0, 0, 0, 0.377);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 800px;
+    text-align: center;
+   
+}
+ </style>
+
+</head>
+
+<body>
+
+  
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/n02111889_774.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>welcom to dog finder</h2>
+          <p>“Dogs are not our whole life, but they make our lives whole.”</p>
+          <button class="btn btn-danger">dog health</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>welcom to dog finder</h2>
+          <p>“Dogs are not our whole life, but they make our lives whole.”</p>
+          <button class="btn btn-danger">dog training</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>welcom to dog finder</h2>
+          <p>“Dogs are not our whole life, but they make our lives whole.”</p>
+          <button class="btn btn-danger">dog product</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="nav container-fluid">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-10 offset-md-1">
+          <h2>Select from a dropdown</h2>
+          <div class="form-group">
+            <select name="doggosDropdown" id="doggoDropDown" class="form-control"></select>
+          </div>
+          <div id="listImageContainer"></div>
+          <button class="btn btn-primary list">More from this breed please!</button>
+        </div>
+      </div>
+   </div><!--end container-->
+  </div><!--end container fluid-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row mt-4 ml-3 mr-3 mb-5 mx-4">
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1567306475/evbgbs74pwo77qonk7ol.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rocky</h5>
+          <p class="card-text">Age: 1</p>
+          <p class="card-text">Breed: beagle</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d6b32eb39ed542d573e72a3" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d6b32eb39ed542d573e72a3" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1568125594/tjcsjcjl36qrkulpnw4g.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Simbha</h5>
+          <p class="card-text">Age: 4 months</p>
+          <p class="card-text">Breed: Pug</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d77b29b8c26f10cd3d25215" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d77b29b8c26f10cd3d25215" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1568257391/ntik0m53f7ssupsccveu.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Liana</h5>
+          <p class="card-text">Age: 4 months</p>
+          <p class="card-text">Breed: Dwarf cat</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d79b56f2aaef20017969f01" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d79b56f2aaef20017969f01" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1568260402/ju4itqaejpjlojqrjz59.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Koda</h5>
+          <p class="card-text">Age: 3 Years</p>
+          <p class="card-text">Breed: German Shepherd</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d79c132b83cea0017de9391" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d79c132b83cea0017de9391" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1568262729/kwmwym9uk9p7kr5uid49.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">jack</h5>
+          <p class="card-text">Age: 4 months</p>
+          <p class="card-text">Breed: Boston Terrier</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d79ca4a9b4ea100170b2e7b" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d79ca4a9b4ea100170b2e7b" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1568264895/rrtkrssdbealmzynyli2.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jack</h5>
+          <p class="card-text">Age: 1 Years</p>
+          <p class="card-text">Breed: Bulldog</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d79d2bfbca7ff0017955988" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d79d2bfbca7ff0017955988" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1568718268/sokmxkrhlikvi0ruypim.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Saave</h5>
+          <p class="card-text">Age: 4 months</p>
+          <p class="card-text">Breed: Belgian Shepherd Dog (Laekenois)</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d80bdbd8871a50c6f66b085" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d80bdbd8871a50c6f66b085" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1569499611/d5uz9ufkcvfttbmocgjb.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Murphy</h5>
+          <p class="card-text">Age: 1 month</p>
+          <p class="card-text">Breed: Bengal</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d8ca9dcae8eb1001721ef5c" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d8ca9dcae8eb1001721ef5c" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1569642679/qpzhvx85r1bdva0m8zhv.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jackob</h5>
+          <p class="card-text">Age: 1 Year</p>
+          <p class="card-text">Breed: Beangl</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d8ed8b8a3e0a500173e16ac" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d8ed8b8a3e0a500173e16ac" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1569643553/jawsnoleg3swg0vhbm6a.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tom</h5>
+          <p class="card-text">Age: 2 Years</p>
+          <p class="card-text">Breed: Bengal</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5d8edc21a3e0a500173e16ae" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5d8edc21a3e0a500173e16ae" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1573728275/twqoq0foerlolmhtxdxx.jpg" height="200px" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Snowy</h5>
+          <p class="card-text">Age: 2</p>
+          <p class="card-text">Breed: Siberian Husky</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5dcd301362d97b0017a9f4ff" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5dcd301362d97b0017a9f4ff" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1609164466/xossvmnjzzuvooezjgco.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">tiger</h5>
+          <p class="card-text">Age: 5</p>
+          <p class="card-text">Breed: asdf</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/5fe9e6b35a7e600017befce1" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="5fe9e6b35a7e600017befce1" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615209952/jlsscepex1b4tlbhnben.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">lexi</h5>
+          <p class="card-text">Age: 3</p>
+          <p class="card-text">Breed: Labrador Retriever</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/604625e1aa7f5205ca30268f" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="604625e1aa7f5205ca30268f" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615295289/wl9myttfpi4sue4fwkxt.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">choco</h5>
+          <p class="card-text">Age: 3</p>
+          <p class="card-text">Breed: Labrador Retriever</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/604773392445500048e8fad0" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="604773392445500048e8fad0" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615647769/fzczjoym88pgcunyzcfe.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">max</h5>
+          <p class="card-text">Age: 1 month</p>
+          <p class="card-text">Breed: Pomeranian</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/604cd41ae0a2d4004800ae33" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="604cd41ae0a2d4004800ae33" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615732924/ycq84fx9m1lzeewge7ga.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Test</h5>
+          <p class="card-text">Age: 2</p>
+          <p class="card-text">Breed: Pug</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/604e20bcf6722a206f9c437f" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="604e20bcf6722a206f9c437f" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615785138/t9bzvhno4mjbho57co8c.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">brixie</h5>
+          <p class="card-text">Age: 3 years</p>
+          <p class="card-text">Breed: Labrador Retriever</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/604eecb324a991004908b30d" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="604eecb324a991004908b30d" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615800988/v3gjmfewq4n07w0vcpro.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">jack</h5>
+          <p class="card-text">Age: 3</p>
+          <p class="card-text">Breed: Labrador Retriever</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/604f2a9d44064c104cf66f10" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="604f2a9d44064c104cf66f10" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615801561/iiaz7hueyflko2mprcdg.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">capse</h5>
+          <p class="card-text">Age: 2</p>
+          <p class="card-text">Breed: bengal</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/604f2cdc62c05f106d31ca93" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="604f2cdc62c05f106d31ca93" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615874159/illis4boltfdui9df3c2.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">dexi</h5>
+          <p class="card-text">Age: 2</p>
+          <p class="card-text">Breed: Labrador Retriever</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/6050487065594616eeb670de" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="6050487065594616eeb670de" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615878041/eqzwrhq0dk3gzkwalshr.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Booster</h5>
+          <p class="card-text">Age: 3</p>
+          <p class="card-text">Breed: Afghan Hound</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/6050579a8d5be01788e78ce7" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="6050579a8d5be01788e78ce7" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615878862/ok6zrb2q0umrvj6i8hpi.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">duno</h5>
+          <p class="card-text">Age: 2</p>
+          <p class="card-text">Breed: Akita</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/60505acf92a90a17f08d2d0d" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="60505acf92a90a17f08d2d0d" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615893144/vfhefxoa8emzbh4xjwgl.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">chuaua</h5>
+          <p class="card-text">Age: 2</p>
+          <p class="card-text">Breed: Chihuahua</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/60509298cd012201797469d5" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="60509298cd012201797469d5" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1615899092/fwbxj0n4fbmkj5svusq5.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">pika</h5>
+          <p class="card-text">Age: 2 years</p>
+          <p class="card-text">Breed: Chihuahua</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/6050a9d5dfaccf01db82aaba" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="6050a9d5dfaccf01db82aaba" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xl-3 col-lg-4 col-sm-6 mb-5">
+      <div class="card">
+        <img src="https://res.cloudinary.com/petfinder/image/upload/v1617803531/ydqkhexj2q1la2wydtdm.jpg" id="cardImg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">kiki</h5>
+          <p class="card-text">Age: 4</p>
+          <p class="card-text">Breed: Labrador Retriever</p>
+        </div>
+        <div class="card-footer">
+          <a href="/petprofile/606db90cc690a40017f9f2f8" class="btn btn-sm mx-2 detailsBtn">Details</a>
+          <a class="btn btn-sm btn-outline-primary mx-2 btn-adopt" value="606db90cc690a40017f9f2f8" href="#">Adopt</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+ 
+</body>
+
+</html> -->
